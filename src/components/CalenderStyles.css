@@ -1,0 +1,9 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+
+.event{
+    border-radius: 10px;
+    text-align: center;
+}
