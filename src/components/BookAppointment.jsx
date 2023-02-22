@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Calendar from "./Calender";
+import Calendar from "./Calendar";
 import styles from "./BookAppointment.module.css";
 import Select from "react-select";
 
@@ -14,8 +14,11 @@ const options = [
 const BookAppointment = () => {
   const [selectValue, setSelectValue] = useState(options[0].value);
   const onChange = (event) => {
-    setSelectValue(event.target.value);
+    setSelectValue(event.value);
   };
+
+  const [date, setDate] = useState(new Date);
+
 
     
   return (

@@ -11,12 +11,12 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Router forceRefresh>
+      <Router basename="/termin">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="bookappointment" element={<BookAppointment />} />
-            <Route path="myappointments" element={<MyAppointment />} />
+            <Route path="/bookappointment" element={<BookAppointment />} />
+            <Route path="/myappointments" element={<MyAppointment />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>

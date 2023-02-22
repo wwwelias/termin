@@ -1,0 +1,25 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+
+.calendar{
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 3fr) 1fr;
+}
+
+.weekday, .time{
+    border: 1px solid black;
+}
+
+.arrow_icon {
+    width: 2em;
+    height: 2em;
+    fill: #000;
+}
+.arrow_left {
+    text-align: right;
+}
+.arrow_right {
+    text-align: left;
+}
