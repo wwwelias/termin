@@ -5,7 +5,7 @@ const Layout = () => {
   return (
     <>
       <header>
-        <h1 className="nav-title">ArztPraxis BlaBla</h1>
+        <h1 className="nav-title">Arztpraxis <span style={{color: "green"}}>immaGsund</span></h1>
         <nav>
           <ul>
             <li>
@@ -19,7 +19,7 @@ const Layout = () => {
             <li>
               <NavLink
                 to="/bookappointment"
-                //className={(state) => (state.isActive ? "active" : "inactive")}
+                className={(state) => (state.isActive ? "active" : "inactive")}
               >
                 Book Appointment
               </NavLink>

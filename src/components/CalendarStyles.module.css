@@ -13,13 +13,26 @@
 }
 
 .arrow_icon {
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
     fill: #000;
 }
 .arrow_left {
-    text-align: right;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+    height: 2em;
 }
+
 .arrow_right {
-    text-align: left;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    height: 2em;
+}
+
+
+.arrow_left:hover,
+.arrow_right:hover {
+    transform: scale(1.01); 
 }

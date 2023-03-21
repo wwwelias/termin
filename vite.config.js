@@ -5,4 +5,10 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   base: "/termin/",
   plugins: [react()],
+  loaders: [
+    {
+      json: /\.json$/,
+      loader: "json-loader",
+    },
+  ],
 });
