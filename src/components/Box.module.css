@@ -3,6 +3,7 @@
     text-align: center;
     margin: 0.1em;
     border-radius: 0.5em;
+    background-color: pink;
 }
 
 .header {
@@ -20,5 +21,11 @@
 }
 
 .booked {
-    background-color: gray;
+    background-color: #72a9fc7e;
+    color: white;
+}
+
+.empty {
+    background-color: white;
+    color: white;
 }
