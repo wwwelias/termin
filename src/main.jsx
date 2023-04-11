@@ -1,5 +1,5 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import BookAppointment from './pages/BookAppointment'
@@ -11,8 +11,8 @@ import Layout from './layouts/Layout'
 
 import './styles/main.css'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
     <Router basename="/termin">
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -23,5 +23,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </Route>
       </Routes>
     </Router>
-  </React.StrictMode>
+  </StrictMode>
 )

@@ -1,26 +1,11 @@
 import styles from './styles.module.css'
 
-const Appointment = (props) => {
-  let extraClass = styles.available
-  let unclickable = false
-  let text = props.start + ' - ' + props.end
-  if (props.empty) {
-    extraClass = styles.empty
-    unclickable = true
-    text = '-'
-  } else if (props.app.patient != null) {
-    extraClass = styles.booked
-    unclickable = true
-  }
-
-  const book = () => {
-    if (unclickable) return
-    alert('Book appointment')
-  }
+const Appointment = ({ empty, app, start, end }) => {
+  const appointmentStyle = empty ? styles?.empty : app?.patient !== null ? styles.booked : styles.available
 
   return (
-    <div onClick={book} className={`${styles.app_box} ${extraClass}`}>
-      {text}
+    <div onClick={() => !empty && alert('Book appointment')} className={`${styles.app_box} ${appointmentStyle}`}>
+      {`${start} - ${end}`}
     </div>
   )
 }
