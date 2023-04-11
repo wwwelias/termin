@@ -4,51 +4,7 @@ import Select from 'react-select'
 
 import styles from './styles.module.css'
 
-const options = [
-  { value: 'sven', label: 'Dr. Sven Hartmann' },
-  { value: 'elias', label: 'Dr. Elias Wohlgenannt' },
-  { value: 'joachim', label: 'Dr. Joachim Wohlgenannt' },
-  { value: 'susanne', label: 'Dr. Susanne Wohlgenannt' },
-  { value: 'florian', label: 'Dr. Florian Wohlgenannt' },
-]
-
-const workingSlots = {
-  sven: [
-    [true, true, true, true, true, true, true, false, false, false, false, false, false, false],
-    [true, true, true, true, true, true, true, true, true, false, false, false, false, false],
-    [false, false, false, false, false, false, false, false, false, true, true, true, true, true],
-    [true, true, true, true, true, true, true, false, false, false, false, false, false, false],
-    [true, true, true, true, true, true, true, false, false, false, false, false, false, false],
-  ],
-  elias: [
-    [false, false, false, false, false, false, false, false, false, true, true, true, true, true],
-    [true, true, true, true, true, true, true, false, false, false, false, false, false, false],
-    [true, true, true, true, true, true, true, true, true, false, false, false, false, false],
-    [true, true, true, true, true, true, true, false, false, false, false, false, false, false],
-    [true, true, true, true, true, true, true, true, true, false, false, false, false, false],
-  ],
-  joachim: [
-    [true, true, true, true, true, false, false, false, false, false, false, false, false, false],
-    [true, true, true, true, true, true, true, true, true, false, false, false, false, false],
-    [true, true, true, true, true, true, true, false, false, false, false, false, false, false],
-    [false, false, false, false, false, false, false, false, false, true, true, true, true, true],
-    [true, true, true, true, true, true, true, false, false, true, true, false, false, false],
-  ],
-  susanne: [
-    [true, true, true, true, true, true, true, false, false, false, false, false, false, false],
-    [true, true, true, true, true, true, true, true, true, false, false, false, false, false],
-    [false, false, false, false, false, false, false, false, false, true, true, true, true, true],
-    [true, true, true, true, true, true, true, true, false, false, false, true, true, true],
-    [false, false, false, false, false, false, false, false, false, false, false, false, false, false],
-  ],
-  florian: [
-    [true, true, true, true, true, true, true, false, false, false, false, false, false, false],
-    [true, true, true, true, true, true, false, false, false, true, true, true, true, true],
-    [false, false, false, false, false, false, false, false, false, true, true, true, true, true],
-    [false, false, true, true, true, true, true, false, false, true, true, false, false, false],
-    [false, false, false, false, true, true, true, true, true, false, false, false, false, false],
-  ],
-}
+import { options, workingSlots } from '../../models/temp'
 
 const BookAppointment = () => {
   const [selectValue, setSelectValue] = useState(options[0].value)

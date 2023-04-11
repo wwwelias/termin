@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 import Appointment from '../Appointment'
 
-import { weekdays, slotTime } from '../../models/date'
+import { weekdays, slotTime } from '../../models/temp'
 import { APP_ENV, API_URL } from '../../config/config'
 
 import styles from './styles.module.css'
