@@ -1,0 +1,22 @@
+.app_box {
+  padding: 1em;
+  text-align: center;
+  margin: 0.1em;
+  border-radius: 0.5em;
+  background-color: pink;
+}
+
+.available {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.booked {
+  background-color: #72a9fc7e;
+  color: white;
+}
+
+.empty {
+  background-color: white;
+  color: white;
+}

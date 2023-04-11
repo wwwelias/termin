@@ -1,0 +1,18 @@
+.body {
+  padding-top: 2em;
+  justify-content: center;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.select {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

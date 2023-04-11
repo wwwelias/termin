@@ -6,10 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "script": "prettier --write --loglevel warn ."
   },
+  "pre-commit": [
+    "script"
+  ],
   "dependencies": {
-    "@daypilot/daypilot-lite-react": "^3.11.0",
     "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -21,6 +23,8 @@
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react": "^3.0.0",
     "json-loader": "^0.5.7",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.6.2",
     "vite": "^4.0.0"
   }
 }
